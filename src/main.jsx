@@ -5,6 +5,6 @@ import { WindowWidthChecker } from "./windowWidth";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <WindowWidthChecker />
+    <UseEffectLearning />
   </StrictMode>
 );
