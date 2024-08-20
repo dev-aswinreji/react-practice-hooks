@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function App() {
+function UseEffectLearning() {
   const [resourceType, setResourseType] = useState("users");
   const [count,setCount] = useState(0)
     useEffect(()=>{
@@ -22,4 +22,4 @@ function App() {
   );
 }
 
-export default App;
+export default UseEffectLearning;
