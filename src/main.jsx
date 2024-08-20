@@ -8,6 +8,6 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     {/* <UseEffectLearning /> */}
     {/* <WindowWidthChecker /> */}
-    < LearningProps name="panda" />
+    < LearningProps name="panda" age="34"  />
   </StrictMode>
 );
