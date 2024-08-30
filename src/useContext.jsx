@@ -19,13 +19,13 @@ import { ThemeContext } from "./App";
 // The useContext accepts the value provided by React.createContext and then re-render the component whenever its value
 // changes but you can still optimize its performance by using memoization
 
-export default function UseContext({hai}) {
-    console.log(hai);
+export default function UseContext() {
+    // console.log(hai);
     console.clear()
-    
     return (
-        <p>
-            {hai}
-        </p>
+        <ThemeContext.Consumer>
+            {value=><h1>{value}</h1>}
+        </ThemeContext.Consumer>
         )
 }
+

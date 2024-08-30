@@ -5,7 +5,7 @@ function App (){
     let data: string = "hello world"
     return (
         <ThemeContext.Provider value={"red"}>
-        <UseContext hai="helloworld"/>
+            <UseContext/>
         </ThemeContext.Provider>
     )
 }
