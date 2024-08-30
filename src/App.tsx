@@ -1,9 +1,12 @@
 import React from "react"
-import UseReducer from "./useReducer"
-
+import UseContext from "./useContext";
+export const ThemeContext = React.createContext("");
 function App (){
+    let data: string = "hello world"
     return (
-        <UseReducer/>
+        <ThemeContext.Provider value={"red"}>
+        <UseContext hai="helloworld"/>
+        </ThemeContext.Provider>
     )
 }
 
