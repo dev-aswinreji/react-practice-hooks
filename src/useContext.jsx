@@ -4,6 +4,7 @@
 // through each nested component . It is desinged to share data that can be considered as global data for a tree of 
 // React components, such as the current authenticated user or theme (eg. color,paddings,margins,font-size)
 
+import { useContext } from "react";
 import { ThemeContext } from "./App";
 
 
@@ -21,11 +22,15 @@ import { ThemeContext } from "./App";
 
 export default function UseContext() {
     // console.log(hai);
-    console.clear()
+    const value = useContext(ThemeContext)
+    // console.clear()
     return (
-        <ThemeContext.Consumer>
-            {value=><h1>{value}</h1>}
-        </ThemeContext.Consumer>
+    // In here we are using ThemeContext.Consumer to get the data from the parent 
+        // <ThemeContext.Consumer>  
+        //     {value=><h1>{value}</h1>}
+        // </ThemeContext.Consumer>
+        <h1>{value}</h1>
+    
         )
 }
 
