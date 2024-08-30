@@ -1,8 +1,9 @@
-import UseStatePt from "./useState"
+import React from "react"
+import UseReducer from "./useReducer"
 
 function App (){
     return (
-        <UseStatePt/>
+        <UseReducer/>
     )
 }
 
