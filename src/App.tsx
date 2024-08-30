@@ -1,12 +1,8 @@
 import React from "react"
-import UseContext from "./useContext";
-export const ThemeContext = React.createContext("");
+import UseRef from "./useRef";
 function App (){
-    let data: string = "hello world"
     return (
-        <ThemeContext.Provider value={"red"}>
-            <UseContext/>
-        </ThemeContext.Provider>
+       <UseRef/> 
     )
 }
 
